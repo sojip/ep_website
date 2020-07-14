@@ -9,6 +9,7 @@ $yellow: #dfd873;
 .container {
     width: 95%;
 
+
 }
 
 p {
@@ -24,7 +25,7 @@ h5 {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(192,255,0,1) 100%, rgba(211,211,211,1) 100%);
     width: 170px;
-    margin: auto;
+    // margin: auto;
     padding: 12px;
 }
 
@@ -56,7 +57,6 @@ nav {
     font-family: $title_police;
     position: relative;
     border-radius: 5px;
-
 }
  
 
@@ -79,11 +79,16 @@ li {
     background-image: url(/static/img/1_.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
-    padding: 200px;
+    // padding: 200px;
+    height: 500px;
     font-family: $text_font;
-    margin: 25px;
+    margin: 75px;
 }
 
 
@@ -95,7 +100,7 @@ li {
     font-weight: bold;
     color: black;
     width: 170px;
-    margin: 15px auto;
+    // margin: 15px auto;
     padding: 12px;
 }
 
