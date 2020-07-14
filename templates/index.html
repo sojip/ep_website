@@ -95,39 +95,40 @@
                     <div class="playing_song">
                       <span id="now_playing">M.I-1 (Prod By Phill John)</span>
                       <span id="state"></span>
-                      <i class="fas fa-play-circle"></i> 
+                      <i class="fas fa-play-circle" id ="playButton" onclick="playpause()" style="display: block;"></i> 
+                      <i class="fas fa-pause-circle" id ="pauseButton" style="display: none;" onclick="playpause()"></i>
                     </div>
 
                     <div class="time_container">
 
                       <div class="time">  
-                        <span class="start_time_mins">00</span>
+                        <span id="start_time_mins">00</span>
                         <span>:</span>
-                        <span class="start_time_secs">00</span>
+                        <span id="start_time_secs">00</span>
                       </div>
                           
                       
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>  
+                      <div class="progress" id="progress_">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" id="lectureProgress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>  
                       </div>   
                       
                           
                       
                       <div class="time">
-                        <span class="end_time_mins">00</span>
+                        <span id="end_time_mins">02</span>
                         <span>:</span>
-                        <span class="end_time_secs" style="margin-right: 5px">00</span>
+                        <span id="end_time_secs" style="margin-right: 5px">48</span>
                       </div>
                       
                           
                    
                       <i class="fas fa-volume-up"></i>
                       
-                      
+                      <input type="range" min="0" max="1" step ="0.1" value="0.5" oninput="changeVolume(this.value)">
 
-                      <div class="progress" id="progress_volume">
+                      <!-- <div class="progress" id="progress_volume">
                         <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                      </div> -->
                     </div>
 
                     
