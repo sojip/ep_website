@@ -115,8 +115,10 @@ li {
     border-radius: 25px;
     height: 600px;
     display:flex;
+    // justify-content: space-evenly;
     flex-wrap: wrap;
     perspective: 400px;
+    font-family: $text_font;
  
 }
 
@@ -263,3 +265,40 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
   }
 
+.time {
+    font-size: 12px;
+}
+
+/* About Sojip */
+
+#about {
+    height: 100%;
+    font-family: $text_font;
+    margin-top: 100px; 
+    margin-bottom:100px;
+    background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ),
+    /* bottom, image */
+    url(/static/img/3_.png);
+
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
+
+@media(min-width:576px) {
+    #about {
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media(min-width:768px) {
+    #about {
+        padding-left: 20%;
+    }
+}
