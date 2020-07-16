@@ -20,9 +20,6 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- audio player script -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@5.2.0/dist/amplitude.js"></script>
-
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/1755d5abdd.js" crossorigin="anonymous"></script>
 
@@ -82,9 +79,9 @@
       
       <section id="music">
           <div class="container">
-              <div>
-                <h2 class="title_right">Music</h2>
-              </div>   
+              
+            <h2 class="title_right">Music</h2>
+                
           </div>   
       </section>
 
@@ -93,15 +90,14 @@
       <section id="listen"> 
         <div class="container" style="margin-top: 200px; margin-bottom:100px; overflow:auto;" id="audioplayer">
             <div id="player_container">
-              <div id="player_left">
-                
-                  <img src="/static/img/cover_ep.jpg" alt="cover_mvp" id="cover"/>
 
+              <div id="player_left">             
+                  <img src="/static/img/cover_ep.jpg" alt="cover_mvp" id="cover"/>
               </div>
   
               <div id="player_right">
-                  <div class="play">
-                 
+                  <div class="play"> 
+
                     <div class="playing_song">
                       <span id="now_playing">M.I-1 (Prod By Phill John)</span>
                       <span id="state"></span>
@@ -110,89 +106,58 @@
                     </div>
 
                     <div class="time_container">
-
                       <div class="time">  
                         <span id="start_time_mins">00</span>
                         <span>:</span>
                         <span id="start_time_secs">00</span>
                       </div>
                           
-                      
                       <div class="progress" id="progress_">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" id="lectureProgress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>  
                       </div>   
-                      
-                          
-                      
+              
                       <div class="time">
                         <span id="end_time_mins">02</span>
                         <span>:</span>
                         <span id="end_time_secs" style="margin-right: 5px">48</span>
                       </div>
-                      
-                          
-                   
-                      <i class="fas fa-volume-up"></i>
-                      
+
+                      <i class="fas fa-volume-up"></i>   
                       <input type="range" min="0" max="1" step ="0.1" value="0.5" oninput="changeVolume(this.value)">
-
-                      <!-- <div class="progress" id="progress_volume">
-                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div> -->
-                    </div>
-
-                    
+                    </div>    
                   </div>
 
-
-                  
-
-                  <div class="playlist">
-                    
+                  <div class="playlist">                
                     <ul class="list-group" style="margin-bottom: 20px;">
                       <li class="list-group-item">
                         <i class="fas fa-play"></i> <span class="songs_title">1 - M.I-1 (Prod By Phill John)</span>  
-                        
                       </li>
                       <li class="list-group-item">
-                        <i class="fas fa-play"></i> <span class="songs_title">2 - Ca Me Tchop Feat Eva Hakapoka (Prod By A.N.G)</span>
-                        
+                        <i class="fas fa-play"></i> <span class="songs_title">2 - Ca Me Tchop Feat Eva Hakapoka (Prod By A.N.G)</span>                     
                       </li>
                       <li class="list-group-item">
-                        <i class="fas fa-play"></i> <span class="songs_title">3 - C'est Comme Ca Feat Magasco (Prod By AJ)</span>
-                        
+                        <i class="fas fa-play"></i> <span class="songs_title">3 - C'est Comme Ca Feat Magasco (Prod By AJ)</span>                  
                       </li>
                       <li class="list-group-item">
-                        <i class="fas fa-play"></i> <span class="songs_title">4 - Défilé Feat Cysoul (Prod By A.N.G)</span>
-                        
+                        <i class="fas fa-play"></i> <span class="songs_title">4 - Défilé Feat Cysoul (Prod By A.N.G)</span>                    
                       </li>
                       <li class="list-group-item">
-                        <i class="fas fa-play"></i> <span class="songs_title">5 - Percé (Prod By Riven Sound)</span>
-                        
+                        <i class="fas fa-play"></i> <span class="songs_title">5 - Percé (Prod By Riven Sound)</span>             
                       </li>
                       <li class="list-group-item">
-                        <i class="fas fa-play"></i> <span class="songs_title">6 - On Te Wait (Prod By Dj All)</span>
-                        
+                        <i class="fas fa-play"></i> <span class="songs_title">6 - On Te Wait (Prod By Dj All)</span>                       
                       </li>
                       <li class="list-group-item">
-                        <i class="fas fa-play"></i> <span class="songs_title">7 - Piment Fort Feat Cysoul (Prod By Melvin Beats)</span>
-                        
+                        <i class="fas fa-play"></i> <span class="songs_title">7 - Piment Fort Feat Cysoul (Prod By Melvin Beats)</span>                     
                       </li>
                       <li class="list-group-item">
-                        <i class="fas fa-play"></i> <span class="songs_title">8 - Bolo (Prod By Track)</span>
-                        
+                        <i class="fas fa-play"></i> <span class="songs_title">8 - Bolo (Prod By Track)</span>                      
                       </li>
                     </ul>
                 </div>
-
-             
-  
-              </div>
-  
+              </div> 
             </div>
-
-
-        </div>
+          </div>
       </section>
 
 
@@ -202,11 +167,10 @@
               <h2 class="title_left">About Sojip</h2>
             </div>   
         </div>   
-    </section>
+      </section>
 
     <section id="aboutSojip">
-      <div class="container" id="about">
-           
+      <div class="container" id="about">    
         <p>
           C’est un 26 Octobre dans la ville de Bafoussam à l’Ouest du Cameroun que l’artiste SOJIP de son vrai nom « FRANCK QUANTIN SOJIP » voit le jour. 
           Il se familiarise très rapidement à la musique en général et au rap en particulier dès son plus jeune âge et se laisse bercé par des artistes tels que : 
@@ -216,20 +180,8 @@
           Diplôme en main, l’artiste décide de se consacrer entièrement à la musique avec un style bien propre à lui et très original dans lequel il évoque les maux de la société
           camerounaise en particulier et du monde en général de façon ironique, parfois satirique tout en restant mélancolique.
         </p>
-      
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

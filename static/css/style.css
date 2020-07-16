@@ -104,12 +104,10 @@ img {
     padding: 40px; }
 
   #player_left {
-    transform-origin: center left;
     transform: rotateY(45deg); } }
 @media (min-width: 768px) {
   #player_container {
     perspective: 1500px;
-    display: flex;
     flex-wrap: nowrap;
     height: 500px; }
 

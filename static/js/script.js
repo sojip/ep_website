@@ -55,6 +55,7 @@ tracks.push(song8);
 //functions definitions
 
 function playsong () {
+
     //stop all songs playing
     tracks.forEach(function (track) {
         track.pause();
@@ -169,7 +170,7 @@ function playpause() {
     }
     else {
         tracks[titre_index - 1].pause();
-        if (window.clearInterval) clearInterval(window.lectureInterval);
+        if (window.lectureInterval) clearInterval(window.lectureInterval);
         playButton.style.display = "block";
         pauseButton.style.display = "none";
     }
