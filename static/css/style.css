@@ -93,7 +93,6 @@ img {
   margin: 25px 0px;
   background-color: black;
   border-radius: 10px;
-  overflow: auto;
   -moz-box-shadow: 10px 10px 15px #000000;
   -webkit-box-shadow: 10px 10px 15px #000000;
   box-shadow: 10px 10px 15px #000000; }
@@ -190,23 +189,31 @@ input[type=range]::-moz-range-thumb {
 .time {
   font-size: 12px; }
 
+.playlist {
+  overflow: auto;
+  height: 75%; }
+
 /* About Sojip */
 #about {
   height: 100%;
   font-family: "Oswald", sans-serif;
   margin-top: 100px;
   margin-bottom: 100px;
+  padding: 10px;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/img/3_.png);
   background-repeat: no-repeat;
-  border-radius: 10px; }
+  border-radius: 10px;
+  background-position: right top; }
 
 @media (min-width: 576px) {
   #about {
     height: 500px;
     display: flex;
-    align-items: center; } }
+    align-items: center;
+    background-position: right top; } }
 @media (min-width: 768px) {
   #about {
-    padding-left: 20%; } }
+    padding-left: 10%;
+    padding-right: 15%; } }
 
 /*# sourceMappingURL=style.css.map */
