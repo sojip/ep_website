@@ -119,6 +119,8 @@ li {
     flex-wrap: wrap;
     perspective: 400px;
     font-family: $text_font;
+  
+
  
 }
 
@@ -133,6 +135,9 @@ img {
     width: 100%;
     box-shadow: -15px 10px 20px black;
     transform-origin: center left;
+
+
+  
 }
 
 
@@ -191,6 +196,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .fa-play-circle, .fa-pause-circle {
@@ -237,6 +243,7 @@ img {
     background-color: #222;
     margin: 25px 15px;
     border-radius: 10px;
+    
 }
 
 input[type=range] {
@@ -269,6 +276,8 @@ input[type=range]::-moz-range-thumb {
     font-size: 12px;
 }
 
+
+
 /* About Sojip */
 
 #about {
@@ -276,6 +285,7 @@ input[type=range]::-moz-range-thumb {
     font-family: $text_font;
     margin-top: 100px; 
     margin-bottom:100px;
+    padding: 10px;
     background: 
     /* top, transparent red */ 
     linear-gradient(
@@ -287,6 +297,8 @@ input[type=range]::-moz-range-thumb {
 
     background-repeat: no-repeat;
     border-radius: 10px;
+    background-position: right top;
+  
     
 }
 
@@ -295,10 +307,14 @@ input[type=range]::-moz-range-thumb {
         height: 500px;
         display: flex;
         align-items: center;
+        background-position: right top;
+
     }
 }
 @media(min-width:768px) {
     #about {
-        padding-left: 20%;
+        padding-left:10%;
+        padding-right: 15%;
+        
     }
 }
